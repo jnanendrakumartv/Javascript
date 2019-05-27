@@ -1,4 +1,4 @@
-var year =2019;
+var year =2016;
 var month =2;
 
 switch(month){
@@ -19,7 +19,7 @@ document.write("30Days");
 break;
 case 2:
 if(year%4==0)
-    document.write("leap yaer 29 Days");
+    document.write("leap year 29 Days");
 default:
 document.write("28Days")
 }
