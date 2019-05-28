@@ -9,6 +9,6 @@ for(var i=0; i < array.length; i++){
         longest = array[i];
     }      
 } 
-document.write("The Lengthy array is = " +longest);
+document.write(longest);
 alert(longest);
 console.log(longest);

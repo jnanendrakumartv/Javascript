@@ -1,6 +1,7 @@
 function changeLabel() {
-        let lbl = document.getElementById('lblEmp');
-        let empName = document.getElementById('emp').value;
+        var lbl = document.getElementById('lblEmp');
+        var text = document.getElementById('emp').value;
 
-        lbl.innerText = empName;
+        lbl.innerText = text;
     }
+

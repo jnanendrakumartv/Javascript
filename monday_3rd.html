@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Color Change</title>
+</head>
+<body>
+ <p id="box" onclick="fn1()">red</p>
+ <p id="box1" onclick="fn2()">green</p>
+ <p id="box2" onclick="fn3()">pink</p>
+   <script type="text/javascript" >
+   	
+   	function fn1(){
+if (document.getElementById('box').style.backgroundColor=="red") {
+document.getElementById('box').style.backgroundColor="white"; 
+}
+else{
+document.getElementById('box').style.backgroundColor="red";
+}
+}
+      function fn2(){
+if (document.getElementById('box1').style.backgroundColor=="green") {
+document.getElementById('box1').style.backgroundColor="white"; 
+}
+else{
+document.getElementById('box1').style.backgroundColor="green";
+}
+}
+
+function fn3(){
+if (document.getElementById('box2').style.backgroundColor=="pink") {
+document.getElementById('box2').style.backgroundColor="white"; 
+}
+else{
+document.getElementById('box2').style.backgroundColor="pink";
+}
+}
+
+   </script>
+
+</body>
+</html>
