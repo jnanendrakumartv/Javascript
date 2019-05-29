@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bind Call Applay</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+var object = {name:"Indian"};
+
+var add = function(a,b,c){
+ return "welcome " +this.name+ " to "+a+" "+b+" in "+c;
+};
+
+document.write(add.call(object, "Sugar", "City ", "Mandya"));
+alert(add.call(object, "Sugar", "City ", "Mandya"));
+</script>
+</body>
+</html>

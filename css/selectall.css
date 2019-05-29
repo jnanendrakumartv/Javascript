@@ -2,17 +2,36 @@
 width: 100px;
 height: 30px;
 background-color: #f77181;
-font-color: white;
-text-align: center;
+color: white;
+
 }
 .btn2{
 width: 100px;
 height: 30px;
 background-color: #f77181;
+color: white;
 
 }
 .btn3{
 width: 100px;
 height: 30px;
 background-color: #13B635;
+color: white;
+}
+span{
+margin-right: 350px;
+font-size: 18px;
+}
+
+div{
+height: 150px;
+width: 100%;
+background-color: #d4d8dd;
+}
+
+#output{
+font-size: 40px;
+font-style: italic;
+font-style: bold;
+color: red;
 }
