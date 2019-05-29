@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Applay</title>
+</head>
+<body>
+	<script type="text/javascript">
+var obj = {name:"Indian"};
+
+var greeting = function(a,b,c){
+    return "welcome "+this.name+" to "+a+" "+b+" in "+c;
+};
+var args = ["Newtown","KOLKATA","WB"];  
+console.log("Output using .apply() below ")
+document.write(greeting.apply(obj,args));
+	</script>
+</body>
+</html>

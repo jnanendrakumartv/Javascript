@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Boundle>
+</head>
+<body>
+<script type="text/javascript">
+var obj = {name:"Indian"};
+var greeting = function(a,b,c){
+    return "welcome "+this.name+" to "+a+" "+b+" in "+c;
+};
+var bound = greeting.bind(obj); 
+console.dir(bound); 
+console.log("Output using .bind() below ");
+console.log(bound("Newtown","KOLKATA","WB"));
+</script>
+</body>
+</html>
