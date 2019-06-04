@@ -1,0 +1,154 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+  	<title>To Display Calender</title>
+  	<link rel="stylesheet" type="text/css" href="./css/calender.css">
+  	<script type="text/javascript" src="./js/calender.js"></script>
+  	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </head>
+    <body>  
+      <div class="main"> <div class="home"><img id="home" src="./image/home.png" width="35" height="35"> <h5 id="h"> Home</h5> <img class="bmw" src="./image/bmw.png" width="40" height="40"> <h3 id="bmw">BMW</h3>
+        <img class="bell" src="./image/bell-.png" width="30" height="30"><h3 id="logout" onclick="document.location.href='./index.html'">Logout</h3>
+      </div>
+      	<div class="row">
+      		<div class="left">
+          <div class="display">   
+    
+            <label id="lblGreetings"></label>
+  <script>
+      var myDate = new Date();
+      var hrs = myDate.getHours();
+
+      var greet;
+
+      if (hrs < 12)
+          greet = 'Good Morning';
+      else if (hrs >= 12 && hrs <= 17)
+          greet = 'Good Afternoon';
+      else if (hrs >= 17 && hrs <= 24)
+          greet = 'Good Evening';
+
+      document.getElementById('lblGreetings').innerHTML =
+          '<b>' + greet + '</b> ';
+  </script> 
+           <br> <h4 id="h3"> User</h4><img class="device" src="./image/grid.png" width="40" height="45"><b>DEVICE</b>
+
+           <div class="time">
+            <p id="demo"></p>
+  <script>
+  var d = new Date();
+  document.getElementById("demo").innerHTML = d;
+  </script>
+           </div>
+           <div class="temp"><h5 id="h5">TEMP</h5><br>
+            <img id="temp" src="./image/temp2.png" width="40" height="40">
+            <!-- <i class='fas fa-cloud-moon-rain' style='font-size:24px'></i> --><br><h5 id="c">85 C</h5>
+           </div>
+           <div class="wifi"><h5 class="h"> SIGNAL</h5><br><img id="wifi" src="./image/wifi1.png" width="50" height="50">
+           </div>
+
+         </div>
+      			<div class="first" id="first">    <script type="text/javascript"> 
+        document.getElementById("first").onclick = function() { 
+            document.getElementById("first").style.display = "none"; 
+        } 
+    </script> 
+      				<p class="p1" >Monday<br> 3<br>June</p>
+      				<img class="image" src="./image/a.jpg" width="50" height="50">
+                      <table><tr>
+                      	<th class="line1"><h4>Coaching Valley Music and Arts Festival, California</h4>
+                      	<h6>The Coachella valley Music And Arts Festival is a three day anual music and arts festival, organized by Goldenvoice and held at the Empire Polo Fields in Indio carlifonia, in the inland Empire's Coachnig valley</h6></th>
+                      	<h5>10:30-7:30pm <button id="delete1">delete</button><button class="edit">Edit</button></h5> 
+                      </tr>
+      				</table> 
+      			</div>
+      			<div class="second" id="second">
+              <script type="text/javascript"> 
+        document.getElementById("second").onclick = function() { 
+            document.getElementById("second").style.display = "none"; 
+        } 
+    </script> 
+      				<p class="p2" >Monday<br> 3<br>July</p>
+      				<img class="image1" src="./image/b.jpg" width="50" height="50">
+                      <table><tr>
+                      	<th class="line2"><h4>Rio Carnival Brazil</h4>
+                      	<h6>The Coachella valley Music And Arts Festival is a three day anual music and arts festival, organized by Goldenvoice and held at the Empire Polo Fields in Indio carlifonia, in the inland Empire's Coachnig valley</h6></th>
+                      	<h5 class="h5">10:30-7:30pm <button id="delete2">delete</button><button class="edit">Edit</button></h5>
+                      </tr>
+      				</table></table> 
+      			</div>
+      			<div class="third" id="third">
+               <script type="text/javascript"> 
+        document.getElementById("third").onclick = function() { 
+            document.getElementById("third").style.display = "none"; 
+        } 
+    </script>
+      				<p class="p3" >Monday<br> 3<br>Aug</p>
+      				<img class="image2" src="./image/c.jpg" width="50" height="50">
+                      <table><tr>
+                      	<th class="line3"><h4>Burning Man,Nevada</h4>
+                      	<h6>The Coachella valley Music And Arts Festival is a three day anual music and arts festival, organized by Goldenvoice and held at the Empire Polo Fields in Indio carlifonia, in the inland Empire's Coachnig valley</h6></th>
+                      	<h5 class="h5">10:30-7:30pm <button id="delete3">delete</button><button class="edit">Edit</button></h5>
+                      </tr>
+      				</table></table> 
+      			</div>
+      		</div>
+      		<div class="right">Events Calender<body onload="displayCalendar()"> 
+                 <div id="calendar"></div><br><button class="button">! Create an Event</button>
+                    <style> 
+  					.monthPre{
+  					 color: gray;
+  					 text-align: center;
+  					}
+  					.monthNow{
+  					 color: blue;
+  					 text-align: center;
+  					}
+  					.dayNow{
+  					 border: 2px solid black;
+  					 color: red;
+  					 text-align: center;
+  					 background-color: #7fbcf9;
+  					}
+  					#calendar{
+  					background-color: #eaedf2;
+            width: 290px;
+  					}
+  					.calendar td{ 
+  					 htmlContent: 2px;
+  					 width: 80px;
+  					}
+  					.button{
+  						background-color: #4e72ad;
+  						color: white;
+  						height: 30px;
+  						width: 150px;
+  						border-radius: 25px;
+  						align-content: center;
+  						margin-left: 70px;
+  					}
+  					.monthNow th{
+  					 background-color: #90dcf9;
+  					 color: #FFFFFF;
+  					 text-align: center;
+  					}
+  					.dayNames{
+  					 background: #f280ce;
+  					 color: #FFFFFF;
+  					 text-align: center;
+  					}
+                   </style> 
+  </body> 
+      		</div>
+      	</div>
+      	</div>  
+    </body> 
+  <html>

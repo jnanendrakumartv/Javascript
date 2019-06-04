@@ -1,25 +1,30 @@
-$('#myModal').modal('show');
-// www.jquery2dotnet.com
-
-var attempt = 3; // Variable to count number of attempts.
-// Below function Executes on click of login button.
-function validate(){
-var username = document.getElementById("username").value;
-var password = document.getElementById("password").value;
-if ( username == "Formget" && password == "formget#123"){
-alert ("Login successfully");
-window.location = "success.html"; // Redirecting to other page.
+function ValidateEmail(inputText)
+{
+var mailformat = /^((\.[a-z0-9]+)*@([a-z]+)*(\.([a-z]{2,5}|[\d]{1,3})))$/;
+if(inputText.value.match(mailformat))
+{
+document.form1.email.focus();
+return true;
+}
+else
+{
+alert("You have entered an invalid email address!");
+document.form1.email.focus();
 return false;
+}
+{
+var passwordformat = /^((a-zA-Z0-9))$/;
+if(inputText.value.match(mailformat)){
+  document.form1.password.focus();
+  return true;
 }
 else{
-attempt --;// Decrementing by one.
-alert("You have left "+attempt+" attempt;");
-// Disabling fields after 3 attempts.
-if( attempt == 0){
-document.getElementById("username").disabled = true;
-document.getElementById("password").disabled = true;
-document.getElementById("submit").disabled = true;
+  alert("You have entered an invalid password!");
+document.form1.password.focus();
 return false;
 }
+
 }
 }
+
+

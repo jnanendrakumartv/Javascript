@@ -1,0 +1,60 @@
+.container{
+  width: 100%;
+  height: 700px;
+  background-color: #cdd2d8;
+
+}
+/*#con{
+  width: 100%;
+background-color: #cdd2d8;
+height: 700px;
+}*/
+.regi{
+  width: 150px;
+  margin-left: -90px;
+  margin-top: 30px;
+ }
+ #regi{
+  background-color: #cdd2d8;
+  width: 120px;
+  border-radius: 25px;
+  border-color: #62b6ea;
+  color: #62b6ea;
+  margin-top: 5px;
+  margin-left:-10px;
+ }
+ .row{
+  text-align: center;
+ }
+ .box{
+  width: 280px;
+  margin-right: 32px;
+  height: 45px;
+  height: 45px;
+  border-top: 2px solid #633022;
+  color: red;
+ }
+ Street line1{
+  color: green;
+ }
+ .small{
+  width: 111px;
+  height: 51px;
+  height: 45px;
+  border-top: 2px solid #633022;
+ }
+ #button1a{
+  background-color: #70cff9;
+  border-radius: 25px;
+  width: 150px;
+  color: white;
+ }
+ .sng{
+  background-color: #47494c;
+  color:  #70cff9;
+  border-radius: 25px;
+  width: 60px;
+ }
+ #regi:hover{
+background-color: #70cff9;
+ }
